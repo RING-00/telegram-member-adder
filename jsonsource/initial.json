@@ -1,0 +1,43 @@
+{
+  "data": {
+    "stats": {
+      "averageDuration": "14s",
+      "averagePassRate": 100,
+      "latestOperatorId": "68827c5778573923221964bf",
+      "latestTestSessionId": "6885040566147656d1538d03",
+      "products": [
+        {
+          "product": "MAG B650 TOMAHAWK WIFI (MS-7DS75)",
+          "total": 4
+        },
+        {
+          "product": "MAG B650 TOMAHAWK WIFI",
+          "total": 1
+        }
+      ],
+      "topOperators": [
+        {
+          "operatorId": "68827c5778573923221964bf",
+          "operatorName": "InitialRun",
+          "totalTestSessions": 5
+        }
+      ],
+      "topProducts": [
+        {
+          "product": "MAG B650 TOMAHAWK WIFI (MS-7DS75)",
+          "total": 4
+        }
+      ],
+      "totalDuration": "1m 10s",
+      "totalFailedTests": 0,
+      "totalOperators": 1,
+      "totalPassedTests": 45,
+      "totalProducts": 2,
+      "totalTestSessions": 5
+    },
+    "timestamp": "2025-07-26T20:21:48.889Z",
+    "type": "initial"
+  },
+  "timestamp": "2025-07-26T20:21:48.889Z",
+  "type": "stats"
+}
