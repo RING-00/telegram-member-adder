@@ -33,11 +33,15 @@ class WebSocketService {
 
   private initializeConnection(): void {
     const wsUrl = process.env.NEXT_PUBLIC_WS_URL;
-    const apiKey = process.env.NEXT_PUBLIC_API_KEY;
-    const urlWithKey = `${wsUrl}?api-key=${apiKey}`;
-    logger.log('Connecting to WebSocket:', urlWithKey);
 
-    this.rws = new ReconnectingWebSocket(urlWithKey, [], {
+    if (!wsUrl) {
+      logger.error('NEXT_PUBLIC_WS_URL is not defined');
+      return;
+    }
+
+    logger.log('Connecting to WebSocket:', wsUrl);
+
+    this.rws = new ReconnectingWebSocket(wsUrl, [], {
       maxReconnectionDelay: 10000,
       minReconnectionDelay: 1000,
       reconnectionDelayGrowFactor: 1.3,
